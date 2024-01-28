@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Virtual Pet & Donut Shop</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>VIRTUAL PET & DONUT SHOP</h1>
+  
+  <div id="petContainer">
+    <div id="pet"></div>
+    <h2 id="clickOnMe">Click on me!</h2>
+  </div>
+
+  
+  <div class="container" id="orderFormContainer" style="display: none;">
+    <form id="orderForm" onsubmit="submitForm(event)">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="cakeDonuts">Number of Cake Donuts:</label>
+        <input type="text" id="cakeDonuts" name="cakeDonuts" required>
+      </div>
+      <div>
+        <label for="bakedDonuts">Number of Glazed Donuts:</label>
+        <input type="text" id="glazedDonuts" name="bakedDonuts" required>
+      </div>
+      <div>
+        <label for="minutes">Minutes till pickup:</label>
+        <input type="text" id="minutes" name="minutes" required>
+      </div>
+      <div>
+        <label for="subtotal">Sub Total:</label>
+        <input type="text" id="subtotal" name="subtotal" readonly>
+      </div>
+      <div>
+        <label for="tax">Tax:</label>
+        <input type="text" id="tax" name="tax" readonly>
+      </div>
+      <div>
+        <label for="total">Total:</label>
+        <input type="text" id="total" name="total" readonly>
+      </div>
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

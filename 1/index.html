@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Painting Workshop Registration</h1>
+        <form id="registrationForm" action="#" method="post" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+
+            <label for="workshop">Preferred Workshop:</label>
+            <select id="workshop" name="workshop">
+                <option value="" disabled selected>Select Workshop</option>
+                <option value="landscape">Landscape Painting</option>
+                <option value="portrait">Portrait Painting</option>
+                <option value="abstract">Abstract Painting</option>
+                <option value="still-life">Still Life Painting</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div id="submissionMessage" class="submission-message">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Display Details</h1>
+        <div>
+            <label for="filterSpecialization">Specialization:</label>
+            <select id="filterSpecialization">
+                <option value="">All</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Medicine">Medicine</option>
+                <option value="Law">Law</option>
+            </select>
+            <label for="filterExperience">Experience (years):</label>
+            <input type="number" id="filterExperience" min="0">
+            <button onclick="filterRecords()">Filter</button>
+        </div>
+        <table id="recordTable">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Specialization</th>
+                    <th>Experience (years)</th>
+                    <th>Achievements</th>
+                </tr>
+            </thead>
+            <tbody id="recordTableBody">
+                <!-- Records will be displayed here -->
+            </tbody>
+        </table>
+        <button onclick="clearRecords()">Clear Records</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

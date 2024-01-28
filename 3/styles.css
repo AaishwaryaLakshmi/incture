@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eebcbc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    color: rgb(117, 12, 12);
+    position: relative;
+    font-size: 32px;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 60%;
+    height: 2px;
+    background-color: rgb(117, 12, 12);
+    transform: translateX(-50%);
+}
+
+#clickOnMe {
+    color: rgb(117, 12, 12);
+}
+
+#petContainer {
+    text-align: center;
+    margin-top: 20px;
+    margin: auto;
+}
+
+#pet {
+    width: 300px;
+    height: 300px;
+    background-image: url('happy_pet.png');
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#pet:hover {
+    transform: scale(1.05);
+}
+
+#pet:active {
+    transform: scale(0.95);
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: auto;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+button {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    width: calc(100% - 16px);
+}
+
+button {
+    background-color: rgb(117, 12, 12);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#orderFormContainer {
+    display: none;
+}
+
+#orderFormContainer #clickOnMe {
+    display: none;
+}
