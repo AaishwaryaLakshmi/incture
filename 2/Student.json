@@ -1,0 +1,7 @@
+{
+  "Student": {
+    "name": ["name1", "name2", "name3"],
+    "branch": ["branch1", "branch2", "branch3"],
+    "semester": ["semester1", "semester2", "semester3"]
+  }
+}
