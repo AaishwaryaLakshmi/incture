@@ -1,30 +1,25 @@
-/* Reset default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
     color: #333;
 }
 
-/* Container styles */
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
 }
 
-/* Heading styles */
 h1, h2, h3 {
     margin-bottom: 20px;
 }
 
-/* Form styles */
 .form-group {
     margin-bottom: 15px;
 }
@@ -39,7 +34,7 @@ input[type="text"],
 input[type="number"],
 select,
 textarea {
-    width: 100%;
+    width: calc(100% - 22px); /* Adjusted width */
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -78,9 +73,8 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Table styles */
 table {
-    width: 100%;
+    width: calc(100% - 20px); /* Adjusted width */
     border-collapse: collapse;
     margin-bottom: 20px;
 }
@@ -95,7 +89,6 @@ th {
     background-color: #f2f2f2;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .container {
         padding: 10px;
